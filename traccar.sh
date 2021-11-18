@@ -42,18 +42,10 @@ cat > /opt/traccar/conf/traccar.xml << EOF
 	<entry key='web.port'>80</entry>
 
     <entry key='database.driver'>com.mysql.jdbc.Driver</entry>
-    <entry key='database.url'>jdbc:mysql://localhost/new_d?allowPublicKeyRetrieval=true&amp;useSSL=false&amp;serverTimezone=UTC&amp;useSSL=false&amp;allowMultiQueries=true&amp;autoReconnect=true&amp;useUnicode=yes&amp;characterEncoding=UTF-8&amp;sessionVariables=sql_mode=''</entry>
+    <entry key='database.url'>jdbc:mysql://localhost/traccar?allowPublicKeyRetrieval=true&amp;useSSL=false&amp;serverTimezone=UTC&amp;useSSL=false&amp;allowMultiQueries=true&amp;autoReconnect=true&amp;useUnicode=yes&amp;characterEncoding=UTF-8&amp;sessionVariables=sql_mode=''</entry>
     <entry key='database.user'>admin</entry>
     <entry key='database.password'>50ycBFsr4emxwB#w</entry>
 
 </properties>
 EOF
 service traccar start
-# clear
-# echo "You can login via following IP address to your Traccar platform with following login info:"
-# ifconfig eth0 | grep "inet " | awk '{gsub("addr:","",$2);  print $2 }'
-# echo "Email: admin"
-# echo "Password: admin"
-# echo "+-++-++-++-++-++-++-+ +-++-+   +-++-++-++-++-++-++-++-++-++-++-++-++-++-++-++-++-++-++-++-++-++-++-++-++-+
-# |P||o||w||e||r||e||d| |b||y|   https://github.com/macan0    Need a custom Traccar design: https://www.fiverr.com/users/macano84
-# +-++-++-++-++-++-++-+ +-++-+   +-++-++-++-++-++-++-++-++-++-++-++-++-++-++-++-++-++-++-++-++-++-++-++-++-+"
